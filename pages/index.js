@@ -41,7 +41,7 @@ export default function Home() {
 
         <input
           value={question}
-          onChange={(e) => setQuestion(e.target.value)}
+          onChange={e => setQuestion(e.target.value)}
           placeholder="Ej: ¿Qué está pasando en Medellín?"
           style={{ width: "70%", padding: 10 }}
         />
@@ -56,7 +56,7 @@ export default function Home() {
       <div>
         <h2>🚨 Alertas recientes</h2>
 
-        {intelligence.slice(0, 10).map((item: any, i: number) => (
+        {intelligence.slice(0, 10).map((item, i) => (
           <div
             key={i}
             style={{
