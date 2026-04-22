@@ -4,9 +4,8 @@ export default function Home() {
   const [intelligence, setIntelligence] = useState([]);
   const [question, setQuestion] = useState("");
   const [answer, setAnswer] = useState("");
-
-  const API = "http://4.180.18.246:3000";
-
+    
+  const API = "/api";
   useEffect(() => {
     fetch(`${API}/intelligence`)
       .then(res => res.json())
